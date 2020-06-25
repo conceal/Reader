@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#000000">
+    <LinearLayout
+        android:id="@+id/bindingView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:visibility="gone"
+        android:orientation="vertical">
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true">
+        <com.example.syz.demo.util.VideoSurfaceView
+            android:id="@+id/video_view_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/video_cover_show"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <ImageButton
+            android:id="@+id/image_clickplay_more_show"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/playvideo"
+            android:src="@drawable/video_play"
+            android:gravity="center"
+            android:tint="#ffffff"
+
+            />
+
+        <ImageView
+            android:id="@+id/image_clickplay_show"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:src="@drawable/video_pause"
+            android:tint="#ffffff"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/tv_currentProgress_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="00:00"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_vertical"
+                />
+
+            <SeekBar
+                android:id="@+id/seekBar_show"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_totalProgress_show"
+                android:text="00:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_vertical"
+                />
+
+            <ImageView
+                android:id="@+id/bt_maxsize_show"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/video_fullscreen"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:tint="#ffffff"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

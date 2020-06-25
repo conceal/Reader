@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.syz.demo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".util.MyAppcation"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".homeFragment.gif.GifShowActivity" />
+        <activity
+            android:name=".screenPage.mineScreen.SettingActivity"
+            android:label=""
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".screenPage.mineScreen.Loginactivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".screenPage.mineScreen.RegisterActivity" />
+        <activity
+            android:name=".screenPage.mineScreen.PersonInfoActivity"
+            android:label="" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.cameraalbumtest.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".screenPage.VideoShowActivity" />
+        <activity android:name=".screenPage.communityScreen.community.CommunityInfoActivity" />
+        <activity android:name=".screenPage.mineScreen.ImgShowActivity" />
+        <activity android:name=".screenPage.communityScreen.search.SearchActivity" />
+        <activity
+            android:name=".screenPage.publishScreen.PublishActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".screenPage.publishScreen.SelectPlateActivity" />
+        <activity android:name=".screenPage.TextComment" />
+        <activity android:name=".screenPage.publishScreen.CardInfoActivity"></activity>
+    </application>
+
+</manifest>

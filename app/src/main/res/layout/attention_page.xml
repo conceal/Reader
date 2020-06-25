@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/White">
+        <TextView
+            android:text="关注"
+            android:id="@+id/text_title"
+            android:textSize="23sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/text_title"
+            android:background="#67dcd4d4"
+            />
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/video_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        >
+        <android.support.v4.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:paddingLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="19sp"
+                            android:text="推荐关注"/>
+                        <TextView
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="19sp"
+                            android:paddingLeft="200dp"
+                            android:text="更多"/>
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/right"
+                            android:paddingRight="30dp"
+                            android:paddingTop="1dp"
+                            android:tint="#000000"
+                            />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp"/>
+                    <LinearLayout
+                        android:paddingLeft="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/attention_usertou1"
+
+                                android:layout_width="65dp"
+                                android:scaleType="fitXY"
+                                android:layout_height="65dp" />
+                            <TextView
+                                android:layout_gravity="center"
+                                android:id="@+id/attention_username1"
+
+                                android:maxEms="4"
+                                android:maxLines="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginLeft="3dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/attention_usertou2"
+                                android:layout_width="65dp"
+                                android:scaleType="fitXY"
+                                android:layout_height="65dp" />
+                            <TextView
+                                android:layout_gravity="center"
+                                android:id="@+id/attention_username2"
+                                android:maxEms="4"
+                                android:maxLines="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginLeft="3dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/attention_usertou3"
+
+                                android:layout_width="65dp"
+                                android:scaleType="fitXY"
+                                android:layout_height="65dp" />
+                            <TextView
+                                android:layout_gravity="center"
+                                android:maxEms="4"
+                                android:maxLines="1"
+                                android:id="@+id/attention_username3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginLeft="3dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/attention_usertou4"
+                                android:layout_width="65dp"
+                                android:scaleType="fitXY"
+                                android:layout_height="65dp" />
+                            <TextView
+                                android:maxEms="4"
+                                android:maxLines="1"
+                                android:layout_gravity="center"
+                                android:id="@+id/attention_username4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginLeft="3dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/attention_usertou5"
+                                android:layout_width="65dp"
+                                android:scaleType="fitXY"
+                                android:layout_height="65dp" />
+                            <TextView
+                                android:maxEms="4"
+                                android:maxLines="1"
+                                android:layout_gravity="center"
+                                android:id="@+id/attention_username5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:background="#67dcd4d4"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/attention_recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>
+

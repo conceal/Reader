@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/bindingView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/White"
+        android:visibility="gone"
+        android:orientation="vertical">
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/bindingView">
+
+        <ImageView
+            android:id="@+id/register_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/register_phone_row"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/actionBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+86"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                />
+
+            <EditText
+                android:id="@+id/register_phone"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:hint="请输入手机号"
+                android:textSize="20sp"
+                android:background="@null"
+                style="?android:attr/textViewStyle"
+                android:layout_toRightOf="@+id/phone_number"
+                android:layout_marginLeft="10dp"/>
+            <ImageView
+                android:id="@+id/register_phone_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#10000000"
+                android:layout_alignParentBottom="true"
+                />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/register_check_row"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/register_phone_row"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/check_number"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:hint="请输入验证码"
+            android:textSize="20sp"
+            android:background="@null"
+            style="?android:attr/textViewStyle"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/check_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取验证码 >"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/check_number"
+            />
+
+        <ImageView
+            android:id="@+id/check_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#10000000"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/register_password_row"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/register_check_row"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:hint="请输入密码"
+            android:textSize="20sp"
+            android:background="@null"
+            style="?android:attr/textViewStyle"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/register_password_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#10000000"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login_in"
+        android:text="注册"
+        android:textSize="20sp"
+        android:textColor="@color/White"
+        android:layout_below="@+id/register_password_row"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击完成按钮,即表示同意"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/secret_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《隐私权声明》"
+            android:textColor="@color/pink"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

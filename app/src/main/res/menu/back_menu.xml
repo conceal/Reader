@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/left_back_btn"
+            android:icon="@mipmap/back"
+            android:title="后退"
+            app:showAsAction="always"/>
+
+        <item
+            android:id="@+id/left_text_btn"
+            android:title=""
+            app:actionLayout="@layout/back_menu_text_layout"
+            app:showAsAction="always"/>
+
+
+</menu>

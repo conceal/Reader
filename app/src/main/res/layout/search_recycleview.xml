@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_order_item"
+    android:layout_width="match_parent"
+    android:layout_height="41dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/order_number"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:text="1"
+            android:textSize="12sp"
+            android:background="@drawable/order_circle"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 球"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/order_number"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#10000000"
+        />
+</LinearLayout>
